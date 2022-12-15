@@ -1,0 +1,308 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a {
+    color: black;
+}
+
+
+.header__top{
+    background-image:url("photocover.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+background-size: cover; 
+background-position-x: center;
+
+}
+
+.header__title {
+    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    h4 {
+        margin: 0px;
+    }
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (max-width:845px) { 
+        display:flex;
+        flex-direction: column;
+        
+    }
+}
+
+hr {
+    width: 15%;
+}
+
+nav {
+    // background-color:#f5f5f5 ;
+    padding: 10px;
+
+}
+
+.navhoriz2 {
+    background-color: #f5f5f5;
+}
+
+
+.navbar{
+    display: inline;
+    list-style-type: none;
+    text-align: center;
+}
+
+.navhoriz{
+    display: inline;
+    margin: 20px 15px;
+    
+    padding: 10px;
+a:hover{
+    color: #efefef;
+}
+}
+
+
+.navhoriz:hover {
+    background-color:black ;
+    color: #efefef;
+
+    a {
+        color: #efefef;
+    }
+}
+.navhoriz__color{
+background-color: black;
+color:aliceblue;
+}
+.section1 {
+    background-color: #f5f5f5;
+}
+.section__text{
+    display: flex;
+    
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.bloc-image ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 40px;
+    gap: 20px 20px;
+}
+
+.bloc-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 40px;
+    gap: 20px 20px;
+   
+}
+ .bloc-logo img {
+    width: 33%;
+    background-color: #ffffff;
+    
+    
+ }
+ .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+ }
+ .button {
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+    padding: 10px;
+ }
+
+ .input{
+    margin: 5px 0px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+ }
+
+ .message {
+    height: 150px;
+    border: none;
+    margin: 5px 0px;
+ }
+ form{
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .conteneur {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    position: relative;
+    padding: 30px 0;
+}
+
+.opacity {
+    font-size: 40px;
+    margin: 0;
+    width: 100%;
+    color: #efefef;
+}
+
+.up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: unset;
+}
+
+.conteneur1 {
+    display: flex;
+    flex-direction: column;
+    @media screen and ( min-width: 600px) {
+        flex-direction: row;
+    }
+
+    .imagebloc {
+        width: 100%;
+        object-fit: cover;
+        @media screen and ( min-width: 600px) {
+            width: 30%;
+        }
+    }
+
+    .conteneur2 {
+        width: 100%;
+        padding: 10px 30px;
+        @media screen and ( min-width: 600px) {
+            width: 70%;
+        }
+    }
+}
+
+.imgcomp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 250px;
+    padding: 30px 10px;
+    img {
+        width: min(100px, 100%);
+        
+       
+        
+    }
+}
+.bar_progress{
+    margin-bottom: 15px;
+    background-color: #f5f5f5;
+
+    img {
+        width: 15px;
+        filter: invert(1);
+    }
+    
+}
+
+.bar_progress_75 img {
+    width: 15px;
+    filter: invert(1);
+}
+
+.bar_progress_70 img {
+    width: 15px;
+        filter: invert(1);
+}
+
+@for $i from 0 through 100 {
+    .bar_progress_#{$i} {
+        width: #{$i * 1%};
+        padding: 5px 10px;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/******************************
+******** Utilities ************
+******************************/
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+footer {
+    background-color:#333333;
+
+    p {
+        color: white;
+    }
+}
+
+footer ul img {
+    width :40px;
+    filter: invert(1);
+    margin: 10px 20px;
+    border: solid black 1px;
+    border-radius: 50%;
+    padding: 5px;
+   
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
